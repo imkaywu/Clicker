@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textfragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back">
+    <EditText
+        android:id="@+id/editText"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="top"
+        android:layout_marginTop="30dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginLeft="25dip"
+        android:textSize="16.0sp" 
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@null"
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/hint_message"
+        android:background="@drawable/answersheet1" 
+        android:paddingLeft="22.0dip"
+		android:minLines="3"  
+		android:maxLines="5" />
+        
+    <Button 
+    	android:id="@+id/sentB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dip"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/send1sel"
+        android:gravity="center"/>
+        
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sentB1"
+        android:layout_marginRight="25dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginBottom="18dip"
+        android:scrollbarStyle="insideOverlay"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/base"
+        android:paddingTop="16dip"
+        android:paddingLeft="28dip"
+        android:paddingBottom="12dip"
+        android:cacheColorHint="#00000000" />   
+</RelativeLayout>
+    

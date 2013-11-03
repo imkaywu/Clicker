@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentFragment" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/usrInfo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginTop="10dip"
+    	android:textSize="18sp"
+    	android:textIsSelectable="true"
+    	android:textColor="#FFFFFF"
+		android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/button"
+    	android:gravity="center"
+    	android:layout_alignParentRight="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/idontknowsel" />
+	        	 
+    <android.support.v4.view.ViewPager 
+    	android:id="@+id/pager"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dip"
+    	android:layout_marginRight="10dip"
+    	android:layout_below="@id/button" />
+    
+    <com.example.clickerviewpager.DotMarks
+        android:id="@+id/dotMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip" />
+    
+</RelativeLayout>
+	
